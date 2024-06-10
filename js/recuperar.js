@@ -1,4 +1,3 @@
-
 function validateAndSend() {
     var email = document.getElementById('email').value;
     var messageContainer = document.getElementById('message-container');
