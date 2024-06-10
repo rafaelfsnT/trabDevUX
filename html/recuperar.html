@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperação de Senha</title>
-    <link rel="stylesheet" href="..//css/recuperar.css">
+    <title>Esqueci Minha Senha</title>
+    <link rel="stylesheet" type="text/css" href="../css/recuperar.css">
+    <script src="../js/recuperar.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post">
-            <h2>Recuperação de Senha</h2>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Esqueci Minha Senha</h1>
+            <div class="input-group">
+                <div class="icon-container">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <input type="email" id="email" placeholder="Digite seu e-mail cadastrado" required>
             </div>
-            <div class="form-group">
-                <button href="../html/paginaPrincipal.html"  type="submit">Recuperar Senha</button>
+            <button id="submitButton" onclick="validateAndSend()">Enviar</button>
+            <div class="message-container" id="message-container">
+                <i class="fas fa-check-circle"></i>
+            <span>Um e-mail foi enviado com instruções para redefinir a senha.</span>
+            
             </div>
-        </form>
+        </div>
+        <div class="cadastro-options">
+            <a href="../html/login.html" class="voltar">Voltar para o início</a>
+          </div>
+        </div>
     </div>
+<script src="script.js"></script>
+
 </body>
 </html>
